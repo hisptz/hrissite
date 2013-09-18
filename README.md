@@ -27,7 +27,7 @@ The following are couple of commands for operating under virtual env:
 After creating and activating virtualenv, while inside virtualenv folder,
 clone this site's source codes:
 	
-	$ git clone https://github.com/chingalo/hrissite.git
+	$ git clone https://github.com/kelvinmbwilo/hrissite.git
 
 Inside hrissite directory, install project dependencies inside: deps.txt
 	
