@@ -1,0 +1,12 @@
+{% load menu_tags %}
+{% for child in children %}
+<li>
+    <a href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}</a>
+    {% if child.children %}
+    <ul class="dropdown">
+        {% show_menu from_level to_level extra_inactive extra_active 'dropdown_navigation.html' "" "" child %}
+    </ul>
+    {% endif %}
+</li>
+{% endfor %}
+   

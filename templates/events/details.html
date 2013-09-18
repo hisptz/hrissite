@@ -1,0 +1,26 @@
+{% extends "contents.html" %}
+{% load cms_tags menu_tags %}
+{% block main_contents %}
+<div class="well">
+<h1 style="text-align: left;padding-bottom: 20px">{{ event.event_name|title}}</h1>
+
+<p class="lead" style="text-align: left">{{event.event_discription}}</p>
+
+<ul class="thumbnails">
+{% for choice in event.event_photos_set.all %}	
+  <li class="span6">
+    <div class="thumbnail" >
+      <img src="{{ choice.image.url }}" alt="" style="height: 100px">
+      <p>{{ choice.title }} {{forloop.counter}}</p>
+      
+    </div>
+  </li>
+  {%if forloop.counter|divisibleby:"2" %}
+  	</ul><ul class="thumbnails">	
+  {% endif %}
+  
+{% endfor %}
+</ul>
+</div>
+{% endblock %}
+

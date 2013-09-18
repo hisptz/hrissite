@@ -1,0 +1,19 @@
+{% extends "contents.html" %}
+{% load cms_tags menu_tags %}
+{% block main_contents %}
+<div class="well">
+
+{% if latest_events_list %}
+    <ul class="nav nav-stacked nav-tabs">
+    {% for p in latest_events_list %}
+        <li style="text-align: left; padding: 6px; border-bottom-width: 2px;border-bottom-color:blue"><a href="/events/{{ p.id }}/">
+        	<strong class="lead"><i class="icon-th-large"></i> {{ p.event_name|title }} </strong>
+        	<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{p.event_discription|truncatechars:59 }}</a></li>
+    {% endfor %}
+    </ul>
+    
+{% else %}
+    <h2>No Events are available.</h2>
+{% endif %}
+</div>
+{% endblock %}

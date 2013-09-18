@@ -1,0 +1,18 @@
+{% extends "base2.html" %}
+{% load cms_tags menu_tags %}
+{% block contents %}
+			
+
+<div id='outer-row'>
+<!--rows-->
+<div id='rows'>
+<div id='row1'>
+<!--first row-->
+{% placeholder first_row or %} not yet added {% endplaceholder %}
+</div>
+<div id='row2'>
+<!--second row-->
+{% placeholder second_row or %} not yet added {% endplaceholder %}
+</div>
+</div>
+{% endblock %}

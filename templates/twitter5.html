@@ -1,0 +1,8 @@
+{% extends "contents.html" %}
+{% load cms_tags menu_tags %}
+{% block main_contents %}
+<div class= 'well' style="text-align: left">
+{% placeholder contents_for_other_page or %}not yet added{% endplaceholder  %}
+</div>
+
+{% endblock %}
