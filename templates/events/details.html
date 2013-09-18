@@ -5,7 +5,8 @@
 <h1 style="text-align: left;padding-bottom: 20px">{{ event.event_name|title}}</h1>
 
 <p class="" style="text-align: left">{{event.event_discription}}</p>
-
+{%if event.event_photos_set.all %} 
+<h2 style="text-align: left">Events photos</h2>
 <ul class="thumbnails">
 {% for choice in event.event_photos_set.all %}	
   <li class="span6">
@@ -21,6 +22,7 @@
   
 {% endfor %}
 </ul>
+{% endif %}
 </div>
 {% endblock %}
 
