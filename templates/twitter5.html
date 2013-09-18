@@ -1,0 +1,8 @@
+{% extends "base2.html" %}
+{% load cms_tags menu_tags %}
+{% block contents %}
+<div class= 'contents_for_other_page'>
+{% placeholder contents_for_other_page or %}not yet added{% endplaceholder  %}
+</div>
+
+{% endblock %}

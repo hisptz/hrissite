@@ -1,0 +1,21 @@
+{% extends "base2.html" %}
+{% load cms_tags menu_tags %}
+{% block contents %}
+				
+
+<div class = 'row-fluid' id='three_columns'>
+<!--three rows-->
+<div class = 'span4' id='columns'>
+<!--column-->
+{% placeholder left_column or %} not yet added {% endplaceholder %}
+</div>
+<div class = 'span4' id='columns'>
+<!--column-->
+{% placeholder central_column or %} not yet added {% endplaceholder %}
+</div>
+<div class = 'span4' id='columns'>
+<!--column-->
+{% placeholder right_column or %} not yet added {% endplaceholder %}
+</div>
+</div>
+{% endblock %}

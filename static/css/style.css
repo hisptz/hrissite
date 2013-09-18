@@ -1,0 +1,165 @@
+/*
+ * additional style for the templates
+ * author: joseph chingalo
+ * e-mail: profschingalo@gmail.com
+ * mobile:+255687168637 or +255718922311
+ * facebook username:profschingalo
+ * whatsapp number:+255687168637
+ * 
+ * ==================================
+ * /
+*/
+body{
+background:#ADD8E6;
+}
+#slide_and_news{
+padding-top:10px;
+}
+#contents_of_img{
+width:820px;
+margin-left:11px;
+}
+#slide img{
+height:400px;
+width:850px;
+margin-left:11px;
+border-radius:10px;
+background-color:white;
+}
+#news{
+margin-bottom:5px;
+padding:6px;	
+border-radius:10px;
+border:;
+background-color:#f5f5f5;
+}		
+#news h4{
+font-size:;
+font-family:;
+color:;
+text-decoration:;
+font-style:bold;
+text-align:center;
+border-bottom:1px solid #BFBFBF;
+border-radius:2px;
+}
+#news a{
+display:block;
+border-bottom:1px solid;
+border-radius:2px;
+font-family:;
+font-style:;
+color:;
+text-align:justify;		
+}
+/* Additional syles for articles and tabs on twitter.html */
+#main-contents{
+max-width:60%;
+margin-left:56px;
+background:#f5f5f5;
+padding-top:20px;
+padding-bottom:20px;
+padding-left:80px;
+border-radius:10px;
+margin-bottom:20px;
+text-align:justify;
+}
+.all_articles{
+background-color:#f5f5f5;
+max-width:90%;
+margin:10px auto;
+border-radius:10px;
+min-height:250px;
+}
+.tabs_with_arcticles{
+padding:20px;
+}	
+/*additional syles for breadcrumbs*/
+#breadcrumb-custom{
+margin: 5px auto;
+}
+#columns{
+margin:2px auto;
+}
+/*additional styles for twitter2.html*/
+.around_two_column{
+background-color:#f5f5f5;
+border-radius:10px;
+display:-block;
+padding:5px;
+max-width:1246px;
+margin-bottom:20px;
+}
+#left{
+
+margin:5px;
+border:2px solid ;
+padding: 10px;
+border-radius:10px;
+min-height:200px;
+}
+#right{
+
+border:2px solid ;
+padding: 10px;
+border-radius:10px;
+margin:5px;
+min-height:200px;
+}
+/* additional style for twitter3.html*/
+#outer-row{
+background-color:#f5f5f5;
+border-radius:4px;
+display:-webkit-box;
+-webkit-box-pack:center;
+margin-bottom:10px;
+}
+#rows{
+max-width:1248px;
+min-width:1225px;
+display:-webkit-box;
+-webkit-box-orient:vertical;
+margin-bottom:10px;
+padding:10px;
+}
+#row1{
+border:3px solid ;
+border-radius:5px;
+margin:10px auto;
+min-height:200px;
+padding:15px;
+}
+#row2{
+border:2px solid ;
+border-radius:5px;
+margin:10px auto;
+min-height:200px;
+padding:15px;
+}
+/* additional style for twitter4.html*/
+#three_columns{
+border-radius:10px;
+background-color:#f5f5f5;
+min-height:300px;
+margin-bottom:20px;
+padding-bottom:15px;
+padding-top:10px;
+}
+#columns{
+border:3px solid #4D4D4D;
+padding:10px;
+border-radius:5px;
+margin:10px;
+min-height:280px;
+}
+/* additional style for twitter5.html*/
+.contents_for_other_page{
+background-color:#f5f5f5;
+max-width:85%;
+margin:20px auto;
+border-radius:5px;
+min-height:250px;
+padding:20px;
+text-align:justify;
+}
+

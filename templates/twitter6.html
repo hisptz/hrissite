@@ -1,0 +1,31 @@
+{% extends "base2.html" %}
+{% load cms_tags menu_tags %}
+{% block contents %}
+	<!--tabs with articles-->
+<div class="all_articles">
+	<div class="tabs_with_arcticles">
+		<div class="tabbable">
+			<!--tabs for different articles-->
+			<ul class ="nav nav-tabs">
+				<li class="active"> <a href="#tab1" data-toggle='tab'>{% placeholder article_tab_1  or %} not yet added {% endplaceholder  %}</a></li>
+				<li > <a href="#tab2" data-toggle='tab'>{% placeholder article_tab_2 or %} not yet added {% endplaceholder  %}</a></li>
+				<li > <a href="#tab3" data-toggle='tab'>{% placeholder article_tab_3 or %} not yet added {% endplaceholder  %}</a></li>
+			</ul>
+			<!--contents for each tab-->
+			<div class="tab-content">  
+				<div class="tab-pane active" id="tab1">  
+					<!--content for tab 1-->
+					{% placeholder article_1 or %}not yet added{% endplaceholder  %}  
+				</div>  
+				<div class="tab-pane" id="tab2">  
+					<!--content for tab 1--> 
+					{% placeholder article_2 or %} not yet added {% endplaceholder  %}  
+				</div>  
+				<div class="tab-pane" id="tab3">  
+					<!--content for tab 1--> 
+					{% placeholder article_3 or %} not yet added {% endplaceholder  %} 
+			</div>  
+		</div>	
+	</div>
+</div>
+{% endblock %}
