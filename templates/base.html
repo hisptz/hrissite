@@ -1,0 +1,90 @@
+{% load sekizai_tags i18n cms_tags menu_tags %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title >{% page_attribute page_title %}</title>
+		<meta charset="utf-8">
+		<meta http-equiv='refresh' content='30' >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--styles files-->
+		<link rel="stylesheet" media='screen' href="{{STATIC_URL}}css/bootstrap.min.css" >
+		<link rel="stylesheet" media='screen' href="{{STATIC_URL}}css/bootstrap-responsive.css" >
+		<link rel="stylesheet" media='screen' href="{{STATIC_URL}}css/docs.css" >
+		<link rel="stylesheet" media='screen' href="{{STATIC_URL}}css/prettify.css" >
+		<link rel="stylesheet" media= 'screen' href="{{STATIC_URL}}css/style.css">
+	</head>
+	
+	<body align='center'>
+		<!--body of base template-->
+		<!-- navigation bar-->
+		
+		<div class ="navbar navbar-fixed-top navbar-inverse">
+			<div class = "navbar-inner" >
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </a>
+				<a class="brand" href="{{BASE_URL}}">Human Resource For Health</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav"> 
+						{% show_menu 0 100 100 100 "navigation.html" %}	
+			        </ul>	
+			    </div>
+			</div>
+		</div>	
+		
+		<div align="center">	
+		<div style='width:1100px' >
+		
+		<!--contents from other templates-->
+		
+		<!-- bradcumbs -->
+			<div class ='container-fluid' >
+				<!-- breadcrumbs-->
+				<div class='row-fluid'id='breadcrumb-custom' >
+					<ul class='breadcrumb' style='background-color:white; text-align:left'>
+					{% show_breadcrumb %}</ul>
+				</div>	
+			</div>
+			
+			<!-- main content -->
+			<div class ='container-fluid'>
+					{% block contents %}{% endblock %}
+			</div>
+			<!--footer-->
+			<div class='container-fluid'>
+			<footer style="border-top:2px solid #BFBFBF;">
+				<div class='row-fluid'>
+				<div class='span4'>
+					<!--first column at footer-->
+				</div>
+				<div class='span4'>
+					<!--second column at footer-->
+				</div>
+				<div class='span4'>
+					<!--third column at footer-->
+				</div>
+				<p align=center> &copy;2013 Human Resource For Health</p>
+				</div>
+			</footer>
+		</div>
+		</div>
+		</div>
+<!--js links for bootstrap-->
+<script src="{{STATIC_URL}}js/jquery.js"></script>
+<script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
+<script>
+$(document).reaady(function(){
+	 $('#myCarousel').carousel();
+});
+	
+</script>
+<script src="{{STATIC_URL}}js/holder.js"></script>
+<script src="{{STATIC_URL}}js/prettify.js"></script>
+<script src="{{STATIC_URL}}js/application.js"></script>
+<!--end of js files from bootstrap-->	
+    
+		</body>
+</html>

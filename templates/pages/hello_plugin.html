@@ -1,0 +1,30 @@
+<div id="myCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+  	
+  	{% for image in latest %}
+  	
+  	{% if forloop.counter == 1 %}
+  	<div class="active item  well">
+  		<img src ='{{MEDIA_URL}}{{ image.image }}' style="height: 250px">
+  		<div class="carousel-caption">
+          <h4 style="text-align: left">{{ image.desc_title }}</h4>
+          <p style="text-align: left">{{ image.desc_text }}</p>
+        </div>
+  	</div>
+   	 
+  	{% else%}
+   	 <div class="item  well">
+   	 	<img src ='{{MEDIA_URL}}{{ image.image }}' style="height: 250px">
+   	 	<div class="carousel-caption">
+          <h4 style="text-align: left">{{ image.desc_title }}</h4>
+          <p style="text-align: left">{{ image.desc_text }}</p>
+        </div>
+   	 </div>
+   	 {% endif%}
+    {% endfor %}
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>

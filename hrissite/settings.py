@@ -56,6 +56,9 @@ INSTALLED_APPS = (
     'cms_redirects',
     'easy_thumbnails',
     'cms.plugins.inherit',
+    'downloads',
+    'events',
+    'slideshow',
    
     
 )
@@ -138,7 +141,7 @@ LANGUAGES = [
 ]
 
 CMS_TEMPLATES = ( 
-	('twitter1.html', gettext('home page template by bootstrap')),
+	('home_page.html', gettext('home page')),
 	('twitter5.html', gettext('other pages template by bootstrap')),
 	('twitter6.html', gettext('downloads template by bootstrap')),
 	('twitter2.html', gettext('two column template by bootstrap')),

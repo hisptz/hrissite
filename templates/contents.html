@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load cms_tags menu_tags %}
+{% block contents %}
+ <div class=row-fluid>
+ 	<div class='span9'>
+ 		{% block main_contents %} {% endblock %}
+ 	</div>
+ 	<div class='span3'>
+ 		{% block right_contents %} 
+ 			<div id='news'>
+				<h4>HRHIS Internals</h4>
+				{% placeholder hrhis_internals or %} not yet added {% endplaceholder  %}
+			</div>
+			<!--news-->
+			<div id='news'>
+				<h4>Recent posts</h4>
+				{% placeholder recent_post or %} not yet added {% endplaceholder  %}
+			</div>
+	
+			<div id='news'>
+				<h4>Usefull Links</h4>
+				{% placeholder usefull_links or %} not yet added {% endplaceholder  %}
+			</div>
+			<div id='news'>
+				<h4>Calendar</h4>
+				{% placeholder calender or %} not yet added {% endplaceholder  %}
+			</div>
+ 		{% endblock %}
+ 	</div>
+ </div>
+
+{% endblock %}
+

@@ -1,0 +1,40 @@
+
+<div class="tabbable">
+			<!--tabs for different articles-->
+			<ul class ="nav nav-tabs">
+				
+				<li class="active span4"> <a href="#tab1" data-toggle='tab'> Supportive supervision resources</a></li>
+				<li class="span4"> <a href="#tab2" data-toggle='tab'>Training manuals and Documentations</a></li>
+				<li class="span4"> <a href="#tab3" data-toggle='tab'> HRHIS Tools and Resources </a></li>
+			</ul>
+			<!--contents for each tab-->
+			<div class="tab-content" style="text-align: left">  
+				<div class="tab-pane active" id="tab1">  
+					<ul class="nav nav-tabs nav-stacked">
+					{% for download in latest %}
+						{% if download.category == 'Supportive supervision resources' %}
+						<li style="padding: 3px"><a href="{{download.file.url}}"><b><i class="icon-file icon-white"></i> {{download.file_title}}</b> <i class="icon-download-alt pull-right"></i></a></li>
+						{% endif%}
+					{% endfor %}
+					</ul>
+				</div>  
+				<div class="tab-pane" id="tab2">  
+					<ul class="nav nav-tabs nav-stacked">
+					{% for download in latest %}
+						{% if download.category == 'Training manuals and Documentations' %}
+						<li style="padding: 3px"><a href="{{download.file.url}}"><b><i class="icon-file icon-white"></i> {{download.file_title}}</b> <i class="icon-download-alt pull-right"></i></a></li>
+						{% endif%}
+					{% endfor %}
+					</ul>
+				</div>  
+				<div class="tab-pane" id="tab3">  
+					<ul class="nav nav-tabs nav-stacked">
+					{% for download in latest %}
+						{% if download.category == 'HRHIS Tools and Resources' %}
+						<li style="padding: 3px"><a href="{{download.file.url}}"><b><i class="icon-file icon-white"></i> {{download.file_title}}</b> <i class="icon-download-alt pull-right"></i></a></li>
+						{% endif%}
+					{% endfor %}
+					</ul>
+			</div>  
+		</div>	
+	</div>

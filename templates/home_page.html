@@ -1,0 +1,48 @@
+{% extends "contents.html" %}
+{% load cms_tags menu_tags %}
+{% block main_contents %}
+<!--slide shows and news-->
+<div class='row-fluid'>
+	<div class='well'>
+		<!--slide show-->
+		
+			<!--items for slide show-->
+			<div class= 'row-fluid'>
+				{% placeholder contents_for_other_page or %}not yet added{% endplaceholder  %}
+			</div>
+			
+			<div class='row-fluid' style='text-align:left'>
+				{% placeholder main-contents or %} not yet added {% endplaceholder  %}
+			</div>
+        </div>
+        
+        
+	
+</div>
+<!--main contents-->
+		
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
