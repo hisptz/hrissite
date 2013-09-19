@@ -8,7 +8,8 @@
     {% for p in latest_events_list %}
         <li style="text-align: left; padding: 6px; border-bottom-width: 2px;border-bottom-color:blue"><a href="/events/{{ p.id }}/">
         	<strong class="lead"><i class="icon-th-large"></i> {{ p.event_name|title }} </strong>
-        	<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{p.event_discription|truncatechars:59 }}</a></li>
+        	<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{p.event_discription|truncatechars:59 }}
+        	<b class="pull-right">{{p.event_date|date:"D d M Y"}}</b></a></li>
     {% endfor %}
     </ul>
     
