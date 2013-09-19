@@ -1,0 +1,17 @@
+{% if latest %}
+    {% for post in latest %}
+    <div class="">
+    	<p style="text-align: left;font-size: 1.1em;line-height: 12px"><a href="events/{{post.id}}" style="color:#0C566D;">
+    		<i class="icon-bookmark"></i> {{post.event_name}}
+    		</a>
+    	</p>
+    	<p style="text-align: left;font-size: 0.8em;line-height: 12px">{{post.event_discription|truncatechars:59}}</p>
+    	<p style="text-align: right;line-height: 12px;color:#0C566D">{{post.event_date}} </p>
+    </div>
+    	<hr style="background-color: #8D8D8D"/>
+    
+    {% endfor %}
+    <a href='events/'>All Events</a>
+{% else %}
+    <h2>No Events are available.</h2>
+{% endif %}

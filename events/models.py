@@ -17,3 +17,6 @@ class Event_photos(models.Model):
     
     def __unicode__(self):  # Python 3: def __str__(self):
         return self.title
+    
+class EventPlugin(CMSPlugin):
+    title = models.CharField(max_length=200,default='recent posts')

@@ -43,12 +43,8 @@ border-radius:2px;
 }
 #news a{
 display:block;
-border-bottom:1px solid;
-border-radius:2px;
-font-family:;
-font-style:;
-color:;
-text-align:justify;		
+color: #0C566D;
+text-align: left	
 }
 /* Additional syles for articles and tabs on twitter.html */
 #main-contents{
