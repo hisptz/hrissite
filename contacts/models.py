@@ -13,5 +13,5 @@ class Contacts(models.Model):
 		return self.member_name
 			
 class ContactsPlugin(CMSPlugin):
-	title=models.CharField(max_length=200, default='contacts')
+	title=models.CharField(max_length=200, default='implementers')
 	
