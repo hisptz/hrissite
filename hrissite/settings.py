@@ -59,6 +59,7 @@ INSTALLED_APPS = (
     'downloads',
     'events',
     'slideshow',
+    'contacts',
    
     
 )
