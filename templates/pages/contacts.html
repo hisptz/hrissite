@@ -1,0 +1,52 @@
+
+<p><strong>Project Coordinator:</strong></p>
+{% for member in contacts %}
+{% if member.position == 'Project Coordinator' %}
+<p style="margin-left: 45px;">
+<span>&#160;{{ member.member_name }}</span>
+</p>
+{% else %}
+{% endif %}
+{% endfor %}
+
+<p><strong>Project Administrator:</strong></p>
+{% for member in contacts %}
+{% if member.position == 'Project Administrator' %}
+<p style="margin-left: 45px;">
+<span>&#160;{{ member.member_name }}</span>
+</p>
+{% else %}
+{% endif %}
+{% endfor %}
+
+<p><strong>System Analyst:</strong></p>
+{% for member in contacts %}
+{% if member.position == 'System Analyst' %}
+<p style="margin-left: 45px;">
+<span>&#160;{{ member.member_name }}</span>
+</p>
+{% else %}
+{% endif %}
+{% endfor %}
+
+<p><strong>System Developers:</strong></p>
+{% for member in contacts %}
+{% if member.position == 'System Developers' %}
+<p style="margin-left: 45px;">
+<span>&#160;{{ member.member_name }}</span>
+</p>
+{% else %}
+{% endif %}
+{% endfor %}
+
+<p><strong>Technical supervisor:</strong></p>
+{% for member in contacts %}
+{% if member.position == 'Technical supervisor' %}
+<p style="margin-left: 45px;">
+<span>&#160;{{ member.member_name }}</span>
+</p>
+{% else %}
+{% endif %}
+{% endfor %}
+
+
