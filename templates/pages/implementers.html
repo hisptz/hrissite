@@ -1,4 +1,4 @@
-
+{{conatcts.position}}
 <p><strong>Project Coordinator:</strong></p>
 {% for member in contacts %}
 {% if member.position == 'Project Coordinator' %}
@@ -48,14 +48,3 @@
 {% else %}
 {% endif %}
 {% endfor %}
-{% if contacts.position == 'Other Stuff Member' %}
-<p><strong>Other Stuff Members:</strong></p>
-{% for member in contacts %}
-{% if member.position == 'Other Stuff Member' %}
-<p style="margin-left: 45px;">
-<span>&#160;{{ member.member_name }}</span>
-</p>
-{% else %}
-{% endif %}
-{% endfor %}
-{% endif %}

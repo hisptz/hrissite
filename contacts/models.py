@@ -8,8 +8,7 @@ class Contacts(models.Model):
 	('Project Administrator','Project Administrator'),
 	('System Analyst','System Analyst'),
 	('System Developer','System Developer'),
-	('Technical supervisor','Technical supervisor'),
-	('Other Stuff Member','Other Stuff Member'),	
+	('Technical supervisor','Technical supervisor'),	
 	)
 	member_name=models.CharField(max_length=200)
 	position=models.CharField(max_length=200, choices=position_categories , default='Project Coordinator')
