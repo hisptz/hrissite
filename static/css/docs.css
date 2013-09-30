@@ -12,7 +12,7 @@
 
 body {
   position: relative;
-  padding-top: 40px;
+  /*padding-top: 40px;*/
 }
 
 /* Code in headings */
@@ -191,7 +191,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 /* Masthead (docs home)
 ------------------------- */
 .masthead {
-  padding: 70px 0 80px;
+  /*padding: 70px 0 80px;*/
   margin-bottom: 0;
   color: #fff;
 }

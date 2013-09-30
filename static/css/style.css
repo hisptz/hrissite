@@ -10,7 +10,7 @@
  * /
 */
 body{
-background:#ADD8E6;
+/*background:#ADD8E6;*/
 }
 #slide_and_news{
 padding-top:10px;
@@ -18,30 +18,18 @@ padding-top:10px;
 #contents_of_img{
 
 }
+
+.accordion-group{
+	margin-bottom:16px
+}
 #slide img{
 height:400px;
 margin-left:11px;
 border-radius:10px;
 background-color:white;
 }
-#news{
-margin-bottom:5px;
-padding:6px;	
-border-radius:10px;
-border:;
-background-color:#f5f5f5;
-}		
-#news h4{
-font-size:;
-font-family:;
-color:;
-text-decoration:;
-font-style:bold;
-text-align:center;
-border-bottom:1px solid #BFBFBF;
-border-radius:2px;
-}
-#news a{
+
+.accordion-group a{
 display:block;
 color: #0C566D;
 text-align: left	

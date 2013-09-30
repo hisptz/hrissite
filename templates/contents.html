@@ -7,11 +7,12 @@
  	</div>
  	<div class='span3'>
  		{% block right_contents %} 
- 			<div id='news'>
+ 		
+ 			<!-- <div id='news'>
 				<h4>HRHIS Internals</h4>
 				{% placeholder hrhis_internals or %} not yet added {% endplaceholder  %}
 			</div>
-			<!--news-->
+			<!--news
 			<div id='news'>
 				<h4>Recent posts</h4>
 				{% placeholder recent_post or %} not yet added {% endplaceholder  %}
@@ -24,10 +25,99 @@
 			<div id='news'>
 				<h4>Calendar</h4>
 				{% placeholder calender or %} not yet added {% endplaceholder  %}
-			</div>
+			</div> -->
+	<div class="accordion" id="accordion2">
+		  <div class="accordion-group" style="">
+		    <div class="accordion-heading">
+		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+		        <img src="{{MEDIA_URL}}img/internal.jpg" class='img-circle'>
+			   <b>HRHIS Internals</b>
+		      </a>
+		    </div>
+		    <div id="collapseOne" class="accordion-body collapse">
+		      <div class="accordion-inner">
+		        {% placeholder hrhis_internals or %} not yet added {% endplaceholder  %}
+		      </div>
+		    </div>
+		  </div>
+		  
+		  <div class="accordion-group">
+		    <div class="accordion-heading">
+		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapsethree">
+		        <img src="{{MEDIA_URL}}img/recent.jpg" class='img-circle'>
+			   <b>Recent Posts</b>
+		      </a>
+		    </div>
+		    <div id="collapsethree" class="accordion-body collapse">
+		      <div class="accordion-inner">
+		        {% placeholder recent_post or %} not yet added {% endplaceholder  %}
+		      </div>
+		    </div>
+		  </div>
+		  
+		  <div class="accordion-group">
+		    <div class="accordion-heading">
+		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapsefour">
+		        <img src="{{MEDIA_URL}}img/links.jpg" class='img-circle' height="150" width="150">
+			   <b>Usefull Links</b>
+		      </a>
+		    </div>
+		    <div id="collapsefour" class="accordion-body collapse">
+		      <div class="accordion-inner">
+		        <ul class="nav nav-tabs nav-stacked">
+  					<li><a href="#">Downloads</a></li>
+  					<li><a href="#">Events</a></li>
+  					<li><a href="#">Supervision</a></li>
+  					<li><a href="#">Training</a></li>
+  					<li><a href="#">Ministry Of Health</a></li>
+				</ul>
+		      </div>
+		    </div>
+		  </div>
+		  
+		  <div class="accordion-group">
+		    <div class="accordion-heading">
+		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapsefive">
+		        <img src="{{MEDIA_URL}}img/soacial.jpg" class='img-circle' height="150" width="150">
+			   <b>Social Medias</b>
+		      </a>
+		    </div>
+		    <div id="collapsefive" class="accordion-body collapse">
+		      <div class="accordion-inner">
+		        <ul class="nav nav-tabs nav-stacked">
+		        	<li><a href="#">Facebook</a></li>
+  					<li><a href="#">Youtube</a></li>
+  					<li><a href="#">Google Plus</a></li>
+  					<li><a href="#">Linkedlin</a></li>
+  					<li><a href="#">Rss Feed</a></li>
+  					
+				</ul>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="accordion-group">
+		    <div class="accordion-heading">
+		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+		        <img src="{{MEDIA_URL}}img/cal.jpg" class='img-circle' height="150" width="150">
+			   <b>Callendar</b>
+		      </a>
+		    </div>
+		    <div id="collapseTwo" class="accordion-body collapse">
+		      <div class="accordion-inner">
+		        {% placeholder calender or %} not yet added {% endplaceholder  %}
+		      </div>
+		    </div>
+		  </div>
+		</div>
  		{% endblock %}
  	</div>
+ 	<script>
+	$(document).ready(function(){
+		$("body").hide();
+	});
+</script>
  </div>
 
 {% endblock %}
+
 
