@@ -13,15 +13,17 @@
 		<link rel="stylesheet" media='screen' href="{{STATIC_URL}}css/docs.css" >
 		<link rel="stylesheet" media='screen' href="{{STATIC_URL}}css/prettify.css" >
 		<link rel="stylesheet" media= 'screen' href="{{STATIC_URL}}css/style.css">
+		<link rel="stylesheet" media= 'screen' href="{{STATIC_URL}}css/font-awesome/css/font-awesome.min.css">
+		
 	</head>
 	
 	<body align='center'>
-		<div class=row-fluid>
+		<div class="row-fluid btn btn-block">
 			<div class="span1">
 				
 			</div>
 			<div class="span10">
-				<div class="container-fluid">
+				<div class="row-fluid">
 		 <div class="masthead">
 		 	<img src="{{MEDIA_URL}}img/udsmlogo.jpg" class="pull-left img-circle" height="127" width="124">
             <img src="{{MEDIA_URL}}img/tanlogo.jpg" class="pull-left img-circle">
@@ -51,12 +53,24 @@
           </div>
 		
 		</div>
+			</div>
+			<div class="span1">
+				
+			</div>
+		</div>
+		
+		<div class=row-fluid>
+			<div class="span1">
+				
+			</div>
+			<div class="span10">
+				
 			
 		
 		<!--contents from other templates-->
 		
 		<!-- bradcumbs -->
-			<div class ='container-fluid' >
+			<div class ='row-fluid' >
 				
 				<!-- breadcrumbs-->
 				<div class='row-fluid'id='breadcrumb-custom' >
@@ -74,33 +88,72 @@
 			</div>
 			
 			<!-- main content -->
-			<div class ='container-fluid'>
+			<div class ='row-fluid'>
 				
 				
 					{% block contents %}{% endblock %}
 				
 			</div>
 			<!--footer-->
-			<div class='container-fluid'>
-			<footer style="border-top:2px solid #BFBFBF;">
-				<div class='row-fluid'>
-				<div class='span4'>
-					<!--first column at footer-->
-				</div>
-				<div class='span4'>
-					<!--second column at footer-->
-				</div>
-				<div class='span4'>
-					<!--third column at footer-->
-				</div>
-				<p align=center> &copy;2013 Human Resource For Health</p>
-				</div>
-			</footer>
-		</div>
+			
 			</div>
 			<div class="span1">
 				
 			</div>
+		</div>
+		
+		<div class='row-fluid'>
+			
+				<div class='btn btn-block btn-inverse' style="height: 200px">
+					<div class="span1">
+			</div>
+			<div class="span10">
+				<div class="span3 left" style="color: white;">
+					
+			
+                        <div class="span2"><i class="icon-map-marker icon-3x pull-left"></i> </div>
+                        <div class="span10 text-left"><h4>About HRHIS</h4>
+                            <p><a href="#" style="color: white;">Training</a></p>
+                            <p><a href="#" style="color: white;">Supervision</a></p>
+                            <p><a href="#" style="color: white;">Downloads</a></p>
+                            <p><a href="#" style="color: white;">Implementers</a></p>
+                    </div>
+                    </div>
+                    <div class="span3">
+                        <div class="span2"><i class="icon-phone-sign icon-3x" ></i></div>
+                        <div class="span10 text-left">Contacts
+                        <address>
+                        	<strong>The Coordinator,</strong><br />
+                        	HISP Tanzania<br />
+                        	Computer Science Unit<br />
+                        	P.O BOX 35062 Dar es Salaam<br />
+	                        <abbr title="Phone">P:</abbr> +255-22-2410500/9, +255-22-2410657, 255 784 147946<br>
+	                        <a href="mailto:coordinator@hisptanzania.or.tz" style="color: white;"> coordinator@hisptanzania.or.tz</a>
+                        </address></div>
+                    </div>
+                    <div class="span3" >
+                        <div class="span2"><i class="icon-link icon-3x"></i>  </div>
+                        <div class="span10 text-left">
+                            <h4>Our Partners</h4>
+                            <div style="padding-bottom: 6px"><a href="#" style="color: white;">JAICA</a></div>
+                            <div style="padding-bottom: 6px"><a href="#" style="color: white;">UDSM</a></div>
+                            <div style="padding-bottom: 6px"><a href="#" style="color: white;">Ministry of Health & Social Welfare</a></div>
+                            
+                        </div>
+                    </div>
+                    <div class="span3 text-left">
+                       <div style="padding-bottom: 10px"><a href ="#" style="color: white;"><i class="icon-facebook icon-2x "></i> Facebook </a> </div>
+                       <div style="padding-bottom: 10px"><a href ="#" style="color: white;"><i class="icon-google-plus icon-2x"></i> Google-plus </a> </div>
+                       <div style="padding-bottom: 10px"><a href ="#" style="color: white;"><i class="icon-twitter icon-2x "></i> Twitter </a> </div>
+                       <div style="padding-bottom: 10px"><a href ="#" style="color: white;"><i class="icon-youtube icon-2x "></i> Youtube </a> </div>
+                    </div>
+				
+				</div>
+				<div class="span1">
+					
+				</div>
+				</div>
+				
 		</div>
 		<!--body of base template-->
 		<!-- navigation bar-->
